@@ -9,7 +9,6 @@
   "version": "1.0.0",
   "description": "database for music",
   "main": "server.js",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/erodgeStudent/TeamWebServices.git"
