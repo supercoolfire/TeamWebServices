@@ -30,7 +30,7 @@ const updateStore = async (req, res) => {
         name: req.body.name,
         url: req.body.url
     };
-    const response = await mongodb.getDatabase.db('music').collection('store').replaceOne( { _id: storeId });
+    const response = await mongodb.getDatabase().db('music').collection('store').replaceOne( { _id: storeId }, store);
     if (response.modifiedCount > 0) {
         res.status(204).send();
     } else {
