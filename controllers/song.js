@@ -36,7 +36,7 @@ const updateSong = async (req, res) => {
         bpm: req.body.bpm,
         key: req.body.key
     };
-    const response = await mongodb.getDatabase.db('music').collection('song').replaceOne( { _id: songId });
+    const response = await mongodb.getDatabase().db('music').collection('song').replaceOne( { _id: songId }, song );
     if (response.modifiedCount > 0) {
         res.status(204).send();
     } else {
@@ -47,8 +47,8 @@ const updateSong = async (req, res) => {
 const deleteSong = async (req, res) => {
     console.log("inside delete songs");
     //#swagger.tags = ['songs']
-    const reviewId = new ObjectId(req.params.id);
-    const response = await mongodb.getDatabase().db('music').collection('song').deleteOne( { _id: songId });
+    const songId = new ObjectId(req.params.id);
+    const response = await mongodb.getDatabase().db('music').collection('song').deleteOne( { _id: songId});
     if (response.deletedCount > 0 ) {
         res.status(204).send();
     } else {
