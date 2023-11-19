@@ -12,16 +12,18 @@ POST http://localhost:3000/review HTTP/1.1
 Content-Type: application/json
 
 {   
-    "text": "The quickest way for me to find where to buy my music"
+    "text": "The quickest way for me to find where to buy my music",
+    "date": "11/19"    
 }
 
 ###
 #update review
-PUT http://localhost:3000/review/655a92d77a655825a9250a9c HTTP/1.1
+PUT http://localhost:3000/review/655a9bf0e954c13eb270ec69 HTTP/1.1
 Content-Type: application/json
 
 {
-    "text": "This app doesn't work for me"
+    "text": "This app doesn't work for me",
+    "date": "11/18"
 }
 
 ###

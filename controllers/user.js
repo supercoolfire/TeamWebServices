@@ -55,13 +55,14 @@ const deleteUser = async (req, res) => {
 const createUser = async (req, res) => {
     console.log("inside create users");
     //#swagger.tags = ['users']
+    const userId = new ObjectId(req.params.id);
     const user = {
         username: req.body.username,
         fullname: req.body.fullname,
         email: req.body.email,
         password: req.body.password        
     };
-    const response = await mongodb.getDatabase().db('music').collection('user').insertOne( user );
+    const response = await mongodb.getDatabase().db('music').collection('user').insertOne( {_id: userId }, user );
     if (response.acknowledged) {
         res.status(204).send();
     } else {

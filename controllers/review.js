@@ -29,7 +29,8 @@ const updateReview = async (req, res) => {
     //#swagger.tags = ['reviews']
     const reviewId = new ObjectId(req.params.id);
     const review = {
-        text: req.body.text
+        text: req.body.text,
+        date: req.body.date
     };
     const response = await mongodb.getDatabase().db('music').collection('review').replaceOne( { _id: reviewId }, review);
     if (response.modifiedCount > 0 ) {
@@ -54,8 +55,10 @@ const deleteReview = async (req, res) => {
 const createReview = async (req, res) => {
     console.log("inside create reviews");
     //#swagger.tags = ['reviews']
+    const reviewId = new ObjectId(req.params.id);
     const review = {
-        text: req.body.text
+        text: req.body.text,
+        date: req.body.date
     };
     const response = await mongodb.getDatabase().db('music').collection('review').insertOne( review );
     if (response.acknowledged) {

@@ -54,8 +54,8 @@ const createStore = async (req, res) => {
     console.log("inside create stores");
     //#swagger.tags = ['stores']
     const store = {
-        title: req.body.title,
-        artist: req.body.artist        
+        name: req.body.name,
+        url: req.body.url        
     };
     const response = await mongodb.getDatabase().db('music').collection('store').insertOne( store );
     if (response.acknowledged) {
