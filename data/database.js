@@ -1,4 +1,4 @@
-const dotenv = reuiqre ('dotenv').config();
+const dotenv = require('dotenv').config();
 
 const MongoClient = require('mongodb').MongoClient;
 

@@ -7,7 +7,7 @@ const getAllSongs = async (req, res) => {
     const result = await mongodb.getDatabase().db('music').collection('song').find();
     result.toArray().then((songs) => {
         res.setHeader('Content-Type', 'application/json');
-        res.Status(200).json(songs);
+        res.status(200).json(songs);
     });
 };
 

@@ -7,7 +7,7 @@ const getAllStores = async (req, res) => {
     const result = await mongodb.getDatabase().db('music').collection('store').find();
     result.toArray().then((stores) => {
         res.setHeader('Content-Type', 'application/json');
-        res.Status(200).json(stores);
+        res.status(200).json(stores);
     });
 };
 
