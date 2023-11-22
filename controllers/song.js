@@ -40,7 +40,7 @@ const updateSong = async (req, res) => {
     if (response.modifiedCount > 0) {
         res.status(204).send();
     } else {
-        res.status(500).json(response.error || 'Some error occured while updating this song');
+        res.status(500).json(response.error || 'Some error occurred while updating this song');
     }
 };
 
