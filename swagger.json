@@ -5,10 +5,10 @@
     "version": "1.0.0",
     "description": ""
   },
-  "host": "localhost:3000",
+  "host": "https://musicdatabase-64n3.onrender.com/",
   "basePath": "/",
   "schemes": [
-    "http",
+    // "http",
     "https"
   ],
   "paths": {
