@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Table of Contents</title>
+</head>
+
+<body>
+  <main>
+    <h1>CSE 341 Final project Proposal </h1>
+
+    <h2><a name="general-info" id="general-info"></a>General Info</h2>
+    <p><a href="https://project1-jiss.onrender.com/" target="_blank" rel="noopener noreferrer">Jayser Pilapil</a>, Emery Rodziewicz, Lourenco Da Silva, Nelson Attah<br />
+      Music Data Base</p>
+      <h2>Contents:</h2>
+      <ol>
+        <li><a href="#general-info">General Info</a> <span class="page-number">1</span></li>
+        <li><a href="#application-info">Application Info</a> <span class="page-number">2</span></li>
+        <ul>
+          <li><a href="#api-description">What will the API do?</a> <span class="page-number">2</span></li>
+          <li><a href="#login-system">How will your API utilize a login system?</a> <span class="page-number">2</span>
+          </li>
+          <li><a href="#database">What database will you use?</a> <span class="page-number">2</span></li>
+          <li><a href="#data-storage">How will the data be stored in your database?</a> <span class="page-number">2</span></li>
+          <li><a href="#frontend-authentication">How would a frontend manage authentication state based on the data you
+              provide?</a> <span class="page-number">2</span></li>
+          <li><a href="#secured-data">What pieces of data in your app will need to be secured? How will you demonstrate
+              web security principles?</a> <span class="page-number">2</span></li>
+          <li><a href="#file-structure">What file structure and program architecture will you use for this project?</a>
+            <span class="page-number">2</span></li>
+          <li><a href="#stretch-challenges">What are potential stretch challenges?</a> <span class="page-number">2</span></li>
+        </ul>
+        <li><a href="#api-endpoint-planning">API Endpoint Planning</a> <span class="page-number">2</span></li>
+        <li><a href="#scheduling-and-delegation">Project Scheduling and Delegation</a> <span class="page-number">-
+            3</span></li>
+        <ul>
+          <li><a href="#work-division">How will you divide up work in your team?</a> <span class="page-number">3</span>
+          </li>
+        </ul>
+        <li><a href="#risks">Potential Risks and Risk Mitigation Techniques</a> <span class="page-number">4</span></li>
+        <ul>
+          <li><a href="#project-risks">What are the risks involved with you being able to finish this project in a
+              timely
+              manner?</a> <span class="page-number">4</span></li>
+          <li><a href="#risk-mitigation">How will you mitigate or overcome these risks?</a> <span class="page-number">4</span></li>
+        </ul>
+      </ol>
+      <h2><a name="application-info" id="application-info"></a>Application Info</h2>
+      <h3><a name="api-description" id="api-description"></a>What will the API do</h3>
+      <p>Collect data about music. Genre, artist name, etc. </p>
+      <h3><a name="login-system" id="login-system"></a>How will your API utilize a login system?</h3>
+      <p>One of our collections will have user name, email, password.</p>
+      <h3><a name="database" id="database"></a>What database will you use?</h3>
+      <p>Mongo database</p>
+      <h3><a name="data-storage" id="data-storage"></a>How will the data be stored in your database?</h3>
+      <p>Collections of music genre, artist, etc. </p>
+      <h3><a name="frontend-authentication" id="frontend-authentication"></a>How would a frontend be able to manage
+        authentication state based on the data
+        you provide?</h3>
+      <p>Go through validation of Oauth.</p>
+      <h3><a name="secured-data" id="secured-data"></a>What pieces of data in your app will need to be secured? How
+        will
+        you
+        demonstrate web security principles in the development of this app?</h3>
+      <p>Username password, regex. Hashed password.</p>
+      <h3><a name="file-structure" id="file-structure"></a>What file structure and program architecture will you use
+        for
+        this project
+        (how will you organize your node project)? Why?</h3>
+      <p>Clean and simple by using folders. We will also use swagger to organize.</p>
+      <h3><a name="stretch-challenges" id="stretch-challenges"></a>What are potential stretch challenges that you
+        could
+        implement to go above
+        and beyond?<a name="mral43ww1pvt" id="mral43ww1pvt"></a></h3>
+      <p>Adding audio files.</p>
+      <h2><a name="api-endpoint-planning" id="api-endpoint-planning"></a>API Endpoint Planning</h2>
+      <p>For this section, you&rsquo;ll plan out what API endpoints you&rsquo;ll need for your project. </p>
+      <ul>
+        <li>artist</li>
+        <ul>
+          <li>POST /artist</li>
+          <li>PUT /artist</li>
+          <li>GET /pet</li>
+          <li>GET/artist/{artistId}</li>
+          <li>DELETE /artist/{artistId}</li>
+        </ul>
+        <li>Store (amazon music, apple store, BestBuy, Walmart, etc)</li>
+        <ul>
+          <li>GET /store</li>
+          <li>POST /store</li>
+          <li>PUT/store/{storeId}</li>
+          <li>GET /store/{storeId}</li>
+          <li>DELETE /store/{storeId}</li>
+        </ul>
+        <li>user</li>
+        <ul>
+          <li>POST /user</li>
+          <li>GET /user/{userId}</li>
+          <li>PUT /user/{userId}</li>
+          <li>DELETE /user/{userId}</li>
+        </ul>
+        <li>genre</li>
+        <ul>
+          <li>POST /genre</li>
+          <li>GET /genre/{genreId}</li>
+          <li>PUT /genre/{genreId}</li>
+          <li>DELETE /genre/{genreId}</li>
+        </ul>
+      </ul>
+      <h2><a name="scheduling-and-delegation" id="scheduling-and-delegation"></a>Project Scheduling and Delegation
+      </h2>
+      <p>Plan out what tasks will get completed with each lesson remaining in the semester (Only edit highlighted text).
+      </p>
+      <table border="1" cellspacing="0" cellpadding="0" width="623">
+        <tr>
+          <td width="312" valign="top"><br />
+            Week 04 Tasks </td>
+          <td width="312" valign="top">
+            <p><em>Project Proposal</em></p>
+          </td>
+        </tr>
+        <tr>
+          <td width="312" valign="top">
+            <p>Week 05 Tasks</p>
+          </td>
+          <td width="312" valign="top">
+            <ul>
+              <li><em>Create Git Repo</em></li>
+              <li><em>Push to Heroku</em></li>
+              <li><em>API DOCUMENTATION is complete and available at route &lsquo;/api-docs&rsquo;</em></li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td width="312" valign="top">
+            <p>Week 06 Tasks</p>
+          </td>
+          <td width="312" valign="top">
+            <p>Swagger, Mongo DB, Oauth</p>
+          </td>
+        </tr>
+        <tr>
+          <td width="312" valign="top">
+            <p>Week 07 Tasks</p>
+          </td>
+          <td width="312" valign="top">
+            <p>…<em>…Video Presentation…</em></p>
+          </td>
+        </tr>
+      </table>
+      <h3><a name="work-division" id="work-division"></a>How will you divide up work in your team to ensure the
+        following tasks all
+        get completed?</h3>
+      <ul>
+        <li>HTTP GET, GET (all, single) Emery</li>
+        <li>HTTP POST Jayser</li>
+        <li>HTTP PUT Lourenco</li>
+        <li>HTTP DELETE Emery</li>
+        <li>Node.js project creation Jayser</li>
+        <li>Create git repo and share with group Lourenco</li>
+        <li>MongoDB setup Emery </li>
+        <li>API Swagger documentation for all API routes Jayser</li>
+        <li>Video presentation of node project, all routes functioning, mongoDB data being modified, and API
+          documentation.
+          The whole Group will check to see if it is working.</li>
+      </ul>
+      <h2><a name="risks" id="risks"></a>Potential Risks and Risk Mitigation Techniques</h2>
+      <h3><a name="project-risks" id="project-risks"></a>What are the risks involved with you being able to finish
+        this
+        project in a
+        timely manner?</h3>
+      <p>Power outages, typo errors, miscommunication.</p>
+      <h3><a name="risk-mitigation" id="risk-mitigation"></a>How will you mitigate or overcome these risks?</h3>
+      <p>Check each other&rsquo;s work. Constant communication. </p>
+      <p>&nbsp;</p>
+  </main>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+          const topPos = targetElement.getBoundingClientRect().top + window.scrollY;
+          window.scrollTo({
+            top: topPos,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

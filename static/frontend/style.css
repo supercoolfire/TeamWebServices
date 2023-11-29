@@ -1,0 +1,82 @@
+html *{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+    padding: 10px;
+  }
+  #toggle, #swaggle {
+    /* display: block;
+    margin: 0 auto; */
+    padding: 10px 20px;
+    background-color: #ccc;
+    border: 1px solid #999;
+    cursor: pointer;
+    font-size: large;
+    margin: 20px;
+  }
+
+  #embedded-html {
+    display: none;
+    width: 500px;
+    height: 300px;
+    border: 1px solid #999;
+  }
+  /* iframe {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: 1rem;
+  } */
+
+  
+  main {
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 40.0pt;
+    line-height: 107%;
+    text-align: center;
+  }
+  h2 {    
+    line-height: 107%;
+    font-size: 16.0pt;
+    font-family: "Calibri",sans-serif;
+    color: #2F5496;
+    font-weight: normal;
+  }
+  h3 {
+    line-height: 107%;
+    font-size: 13.0pt;
+    font-family: "Calibri",sans-serif;
+    color: #2F5496;
+    font-weight: normal;
+  }
+
+  ol {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 10px;
+  }
+
+  li a {
+    /* text-decoration: none; */
+    color: #333;
+  }
+
+  li::before {
+    margin-right: 10px;
+  }
+
+  p {
+    line-height: 107%;
+    font-size: 11.0pt;
+    font-family: "Calibri",sans-serif;
+  }
+
+  .page-number {
+    float: right;
+  }
