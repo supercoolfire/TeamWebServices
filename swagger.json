@@ -5,7 +5,7 @@
     "version": "1.0.0",
     "description": ""
   },
-  "host": "musicdatabase-64n3.onrender.com/",
+  "host": "teamproject.azure-api.net",
   "basePath": "/",
   "schemes": [
     "https"
