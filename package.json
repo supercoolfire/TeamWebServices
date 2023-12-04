@@ -14,7 +14,8 @@
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js",
-    "swagger": "node ./swagger.js"
+    "swagger": "node ./swagger.js",
+    "test": "jest"
   },
   "name": "teamwebservices",
   "version": "1.0.0",
@@ -31,6 +32,7 @@
   },
   "homepage": "https://github.com/erodgeStudent/TeamWebServices#readme",
   "devDependencies": {
+    "jest": "^29.7.0",
     "nodemon": "^3.0.1"
   },
   "keywords": [],
