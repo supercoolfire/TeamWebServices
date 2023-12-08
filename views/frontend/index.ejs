@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Group 2 Team Project</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/notifications.css">
+
+  <style>
+    #spinnerApiDocs {
+      display: none;
+    }
+  </style>
+
+  <style>
+    a[target="_blank"]:after {
+      content: "\1F517";
+      /* Unicode character for a lock emoji */
+      display: inline-block;
+      margin-left: 5px;
+      /* Adjust as needed */
+      font-size: 1em;
+      /* Adjust as needed */
+    }
+  </style>
+  <script src="/js/script.js" defer></script>
+</head>
+
+<body>
+  <main>
+    <div id="sessionStatus" class="notification"><%= message %></div>
+    <h1>Group 2 Team Project</h1>
+    <ul>
+      <li><a href="/api-docs" target="_blank">/api-docs</a></li>
+      <!-- <li><a href="/github-auth" target="">Sign in with github</a></li> -->
+      <% if (req && req.session && req.session.user) { %>
+      <!-- If the user is logged in, show the logout link -->
+      <li><a href="/github-auth">Github welcome page</a></li>
+      <li><a href="/logout">Logout</a></li>
+      <% } else { %>
+      <!-- If the user is not logged in, show the login link -->
+      <li><a href="/github-auth">Login with github</a></li>
+      <% } %>
+
+    </ul>
+    <div class="inputContainer">
+      <input type="checkbox" id="toggleSwaggy">
+      <label for="toggleSwaggy">Swagger</label>
+      <div id="spinnerApiDocs">Loading...</div>
+      <div id="contentSwaggy"></div>
+    </div>
+    <div class="inputContainer">
+      <input type="checkbox" id="toggleProject">
+      <label for="toggleProject">CSE 341 Final project Proposal</label>
+      <div id="contentProject">
+      </div>
+    </div>
+    <div class="inputContainer">
+      <input type="checkbox" id="toggleRubric">
+      <label for="toggleRubric">Creteria</label>
+      <div id="contentRubric">
+      </div>
+    </div>
+
+  </main>
+</body>
+
+</html>

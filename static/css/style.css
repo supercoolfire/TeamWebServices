@@ -80,3 +80,26 @@ body {
   .page-number {
     float: right;
   }
+
+  .inputContainer {
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.rubTab {
+  width: auto;
+}
+.rubCol1 {
+  max-width: 20%;
+}
+.rubCol2 {
+  max-width: 60%;
+}
+.rubCol3 {
+  max-width: 20%;
+  min-width: 200px;
+}
+
+.rubTab tbody tr {
+  margin-top: .5rem;
+}

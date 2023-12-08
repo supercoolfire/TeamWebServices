@@ -1,18 +1,13 @@
 const swaggerAutogen = require('swagger-autogen');
 
-
-
-const host = 'localhost:3000';
-// const host = 'localhost:3001';
-// const host = 'https://project2-cqkb.onrender.com';
-
 const doc = {
     info: {
-        title: 'Designer Music'
+        title: 'Users Api'
     },
-    host: host,
-    basePath: '/',
+    host: 'localhost:3000',
     schemes: ['http', 'https']
+    // host: 'project2-cqkb.onrender.com',
+    // schemes: ['https', 'http']
 };
 
 const outputFile = './swagger.json';
