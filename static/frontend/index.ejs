@@ -14,15 +14,18 @@
       font-size: 1em; /* Adjust as needed */
     }
   </style>
+  <link rel="stylesheet" href="notifications.css">
   <script type="module" src="./script.js" defer></script>
 </head>
 
 <body>
   <main>
+    <div id="sessionStatus" class="notification"><%= message %></div>
     <h1>Group 2 Team Project</h1>
     <ul>
-      <li><a href="/api-docs" target="_blank">/api-docs</a></li>
+      <li><a href="" target="_blank">/api-docs</a></li>
       <li><a href="/github-auth" target="">Sign in with github</a></li>
+      <li><a href="/google-auth" target="">Sign in with google</a></li>
     </ul>
     <input type="checkbox" id="swaggle">
   <label for="swaggle">swagger</label>
