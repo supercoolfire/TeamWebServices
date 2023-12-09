@@ -1,0 +1,142 @@
+[{
+  "_id": {
+    "$oid": "654ae4cea0e608294bb33a66"
+  },
+  "firstName": "Bob",
+  "lastName": "Smith",
+  "email": "bob@example.com",
+  "favoriteColor": "Red",
+  "birthday": "08/03/1985",
+  "phoneNumber": "555-345-6789"
+},
+{
+  "_id": {
+    "$oid": "654ae4cea0e608294bb33a64"
+  },
+  "firstName": "John",
+  "lastName": "Doe",
+  "email": "johndoe@example.com",
+  "favoriteColor": "Blue",
+  "birthday": "05/15/1980",
+  "phoneNumber": "555-123-4567"
+},
+{
+  "_id": {
+    "$oid": "654ae4cea0e608294bb33a68"
+  },
+  "firstName": "Michael",
+  "lastName": "Brown",
+  "email": "michael@example.com",
+  "favoriteColor": "Orange",
+  "birthday": "12/10/1990",
+  "phoneNumber": "555-567-8901"
+},
+{
+  "_id": {
+    "$oid": "6553085aceb4e488cc6ca1ce"
+  },
+  "firstName": "Emily",
+  "lastName": "Wilson",
+  "email": "emily@example.com",
+  "favoriteColor": "Purple",
+  "birthday": "02/19/1999"
+},
+{
+  "_id": {
+    "$oid": "655fad60425a24250d9c0722"
+  },
+  "firstName": "any",
+  "lastName": "any",
+  "email": "any",
+  "favoriteColor": "any",
+  "birthday": "any",
+  "phoneNumber": "any"
+},
+{
+  "_id": {
+    "$oid": "655fadd7425a24250d9c0723"
+  },
+  "firstName": "any",
+  "lastName": "any",
+  "email": "any",
+  "favoriteColor": "any",
+  "birthday": "any",
+  "phoneNumber": "any"
+},
+{
+  "_id": {
+    "$oid": "655fae28425a24250d9c0724"
+  },
+  "firstName": "any",
+  "lastName": "any",
+  "email": "tae@gae.gae",
+  "favoriteColor": "any",
+  "birthday": "any",
+  "phoneNumber": "any"
+},
+{
+  "_id": {
+    "$oid": "655fae3b425a24250d9c0725"
+  },
+  "firstName": "any",
+  "lastName": "any",
+  "email": "tae@gae.gae",
+  "favoriteColor": "any",
+  "birthday": "any",
+  "phoneNumber": "09423722987"
+},
+{
+  "_id": {
+    "$oid": "655fae9a425a24250d9c0726"
+  },
+  "firstName": "any",
+  "lastName": "any",
+  "email": "any",
+  "favoriteColor": "any",
+  "birthday": "any",
+  "phoneNumber": "any"
+},
+{
+  "_id": {
+    "$oid": "655faeb5425a24250d9c0727"
+  },
+  "firstName": "any",
+  "lastName": "any",
+  "email": "an@y.com",
+  "favoriteColor": "any",
+  "birthday": "any",
+  "phoneNumber": "any"
+},
+{
+  "_id": {
+    "$oid": "655faec5425a24250d9c0728"
+  },
+  "firstName": "any",
+  "lastName": "any",
+  "email": "an@y.com",
+  "favoriteColor": "any",
+  "birthday": "any",
+  "phoneNumber": "1234567890"
+},
+{
+  "_id": {
+    "$oid": "655faef4425a24250d9c0729"
+  },
+  "firstName": "any",
+  "lastName": "any",
+  "email": "an@y.com",
+  "favoriteColor": "any",
+  "birthday": null,
+  "phoneNumber": null
+},
+{
+  "_id": {
+    "$oid": "655fb44d72cd4dfdc45bf69a"
+  },
+  "firstName": "Bob",
+  "lastName": "Smith",
+  "email": "bob@example.com",
+  "favoriteColor": "Red",
+  "birthday": "08/03/1985",
+  "phoneNumber": "555-345-6789"
+}]

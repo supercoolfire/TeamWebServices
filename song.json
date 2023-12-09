@@ -1,0 +1,102 @@
+[
+    {
+      "title": "Bohemian Rhapsody",
+      "artist": "Queen",
+      "album": "A Night at the Opera",
+      "genre": "Rock",
+      "year": 1975,
+      "duration": 539,
+      "bpm": 140,
+      "key": "Eb"
+    },
+    {
+      "title": "Imagine",
+      "artist": "John Lennon",
+      "album": "Imagine",
+      "genre": "Pop",
+      "year": 1971,
+      "duration": 308,
+      "bpm": 100,
+      "key": "C"
+    },
+    {
+      "title": "Hallelujah",
+      "artist": "Leonard Cohen",
+      "album": "Songs of Love and Hate",
+      "genre": "Folk",
+      "year": 1984,
+      "duration": 491,
+      "bpm": 76,
+      "key": "G"
+    },
+    {
+      "title": "Hey Jude",
+      "artist": "The Beatles",
+      "album": "Hey Jude",
+      "genre": "Pop",
+      "year": 1968,
+      "duration": 708,
+      "bpm": 105,
+      "key": "C"
+    },
+    {
+      "title": "What a Wonderful World",
+      "artist": "Louis Armstrong",
+      "album": "Satchmo Sings Sammo (A Tribute to Sammy Davis Jr.)",
+      "genre": "Jazz",
+      "year": 1967,
+      "duration": 208,
+      "bpm": 63,
+      "key": "C"
+    },
+    {
+      "title": "Yesterday",
+      "artist": "The Beatles",
+      "album": "Help!",
+      "genre": "Pop",
+      "year": 1965,
+      "duration": 203,
+      "bpm": 96,
+      "key": "F"
+    },
+    {
+      "title": "Tears in Heaven",
+      "artist": "Eric Clapton",
+      "album": "Tears in Heaven",
+      "genre": "Pop",
+      "year": 1991,
+      "duration": 461,
+      "bpm": 88,
+      "key": "Eb"
+    },
+    {
+      "title": "Hotel California",
+      "artist": "Eagles",
+      "album": "Hotel California",
+      "genre": "Rock",
+      "year": 1977,
+      "duration": 607,
+      "bpm": 140,
+      "key": "Am"
+    },
+    {
+      "title": "Billie Jean",
+      "artist": "Michael Jackson",
+      "album": "Thriller",
+      "genre": "Pop",
+      "year": 1983,
+      "duration": 453,
+      "bpm": 120,
+      "key": "F#"
+    },
+    {
+      "title": "Like a Rolling Stone",
+      "artist": "Bob Dylan",
+      "album": "The Times They Are a-Changin'",
+      "genre": "Folk Rock",
+      "year": 1965,
+      "duration": 607,
+      "bpm": 120,
+      "key": "D"
+    }
+  ]

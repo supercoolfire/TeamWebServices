@@ -1,39 +1,41 @@
 const express = require('express');
 const router = express.Router();
-const githubRoute = require('./githubRoute');
+const githubRoute = require('../../routes/githubRoute');
 const passport = require('passport');
 const path = require('path');
-const overrideMiddleware = require('./override');
+const overrideMiddleware = require('../../routes/override');
 
 // Middleware to set the message based on the user's login status
 router.use((req, res, next) => {
-  if (req.session.user !== undefined) {
-    // console.log(`req.session.user: ${req.session.user}`);
-    if (req.session.user.displayName !== null) {
-      // console.log(`req.session.user.displayName: ${req.session.user.displayName}`);
-      req.session.message = `Logged in as ${req.session.user.displayName}`;
+  if (req.session.user) {
+    console.log(`req.session.user: ${req.session.user}`);
+    if (req.session.user.displayName) {
+      console.log(`req.session.user.displayName: ${req.session.user.displayName}`);
+      username = req.session.user.displayName;
     } 
-    else {
-      // console.log(`req.session.user.username: ${req.session.user.username}`);
-      req.session.message = `Logged in as ${req.session.user.username}`;
-    } 
+    else if (req.session.user.username) {
+      console.log(`req.session.user.username: ${req.session.user.username}`);
+      username = req.session.user.username;
+    } else {
+      console.log('unknown')
+      username = 'unknown';
+    }
+    req.session.message = `Logged in as ${username}`;
   } else {
-    // console.log(req.session.user);
+    console.log("Register now, it's FREE!")
     req.session.message = "Register now, it's FREE!";
   }
-  // console.log(req.session.message);
   
   next();
 });
 
-router.use('/', require('./swagger'));
+router.use('/', require('../../routes/swagger'));
 router.use('/github', githubRoute);
 router.use(overrideMiddleware);
-router.use('/review', require('./review'));
-router.use('/song', require('./song'));
-router.use('/store', require('./store'));
-router.use('/user', require('./user'));
-// router.use('/criteria', require('./criteriaRoute'));
+router.use('/review', require('../../routes/review'));
+router.use('/song', require('../../routes/song'));
+router.use('/store', require('../../routes/store'));
+router.use('/user', require('../../routes/user'));
 
 router.get("/", (req, res) => {
   // console.log("req.session:", req.session);
@@ -52,25 +54,12 @@ router.get("/github-auth", (req, res, next) => {
     // console.log(req.session.user)
     profilePic = req.session.user.photos[0].value;
     isAuthorized = true;
-    if (req.session.user.displayName == null) {
-      req.session.message = `Logged in as ${req.session.user.username}`;
-    } else {
-      req.session.message = `Logged in as ${req.session.user.displayName}`;
-    }
   } else {
     // console.log('github-auth else:')
     // console.log(req.user)
     isAuthorized = false;
     profilePic = '/images/github.png';
   }
-
-  console.log(`auth req.session.message: ${req.session.message}`)
-  if (req.session.returnTo.includes("github/callback")) {
-    req.session.returnTo = '/github-auth';
-  } else if (req.session.returnTo == '/github-auth') {
-    req.session.returnTo = '/';
-  }
-  console.log(`auth req.session.returnTo: ${req.session.returnTo}`)
 
   const data = {
     title: 'Login to github',

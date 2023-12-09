@@ -90,7 +90,7 @@ body {
   width: auto;
 }
 .rubCol1 {
-  max-width: 20%;
+  max-width: 150px;
 }
 .rubCol2 {
   max-width: 60%;
@@ -102,4 +102,13 @@ body {
 
 .rubTab tbody tr {
   margin-top: .5rem;
+}
+
+.rubTab td {
+  padding: 0.5rem;
+}
+
+.api-docs-iframe {
+  width: 100%;
+  height: 500px;
 }

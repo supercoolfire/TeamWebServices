@@ -17,8 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
       // Create an iframe and set its source to /api-docs
       const iframe = document.createElement('iframe');
       iframe.src = '/api-docs';
-      iframe.style.width = '100%';
-      iframe.style.height = '400px';
+      iframe.classList.add('api-docs-iframe');
 
       // Hide spinner once iframe is loaded
       iframe.onload = function () {

@@ -1,0 +1,2 @@
+# /auth
+GET https://github.com/login/oauth/authorize?client_id=1f4c3176c544d779a8bf
