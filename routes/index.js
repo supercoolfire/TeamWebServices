@@ -64,13 +64,13 @@ router.get("/github-auth", (req, res, next) => {
     profilePic = '/images/github.png';
   }
 
-  console.log(`auth req.session.message: ${req.session.message}`)
+  // console.log(`auth req.session.message: ${req.session.message}`);
   if (req.session.returnTo.includes("github/callback")) {
     req.session.returnTo = '/github-auth';
   } else if (req.session.returnTo == '/github-auth') {
     req.session.returnTo = '/';
   }
-  console.log(`auth req.session.returnTo: ${req.session.returnTo}`)
+  // console.log(`auth req.session.returnTo: ${req.session.returnTo}`);
 
   const data = {
     title: 'Login to github',

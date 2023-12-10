@@ -83,7 +83,10 @@ body {
 
   .inputContainer {
     margin: 1rem;
-    cursor: pointer;
+}
+
+label {
+  cursor: pointer;
 }
 
 .rubTab {
