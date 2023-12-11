@@ -4,15 +4,18 @@ const githubModel = require('../models/githubModel');
 async function handleGitHubCallback(req, res) {
   try {
     req.session.user = req.user;
+    if (req.session.user.username !== undefined) {
+      res.locals.message = `Logged in as ${req.session.user.username}`;
+    };
 
     const insertedId = await githubModel.insertVisitorInformation(req.user);
 
     if (insertedId) {
-      console.log("Visitor information inserted successfully:", insertedId);
+      // console.log("Visitor information inserted successfully:", insertedId);
 
       const data = {
         title: 'Login to GitHub',
-        message: req.session.message,
+        message: res.locals.message,
         isAuthorized: true,
         user: req.user,
         req: req,

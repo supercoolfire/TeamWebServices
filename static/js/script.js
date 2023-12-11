@@ -26,6 +26,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
       // Append the iframe to the content container
       contentContainerApiDocs.appendChild(iframe);
+
+      checkboxApiDocs.scrollIntoView({ behavior: 'smooth' });
     } else {
       // Clear the content and hide spinner when checkbox is unchecked
       contentContainerApiDocs.innerHTML = '';
@@ -40,6 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
         .then(response => response.text())
         .then(html => {
           contentContainer.innerHTML = html;
+          checkbox.scrollIntoView({ behavior: 'smooth' });
         });
     } else {
       // Clear the content when checkbox is unchecked
@@ -54,6 +57,7 @@ document.addEventListener('DOMContentLoaded', function () {
         .then(response => response.text())
         .then(html => {
           contentContainerRubric.innerHTML = html;
+          checkRubric.scrollIntoView({ behavior: 'smooth' });
         });
     } else {
       // Clear the content when checkbox is unchecked

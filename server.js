@@ -1,12 +1,12 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const cors = require('cors');
 const dotenv = require('dotenv').config();
+const GitHubStrategy = require('passport-github2').Strategy;
 const mongodb = require('./data/database');
 const passport = require('passport');
-const session = require('express-session');
-const GitHubStrategy = require('passport-github2').Strategy;
-const cors = require('cors');
 const path = require('path');
+const session = require('express-session');
 
 
 const port = process.env.PORT || 3000;
@@ -14,7 +14,7 @@ const app = express();
 
 app.use(bodyParser.json());
 
-// Session configuration
+// Set up session and flash middleware
 app.use(session({
   secret: 'secret',
   resave: false,
