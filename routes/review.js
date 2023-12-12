@@ -5,7 +5,7 @@ const reviewsController = require('../controllers/review');
 const validateReview = require('../middleware/validate-reviews');
 const { isAuthenticated, isGod, isAdmin, isModerator } = require('../middleware/authenticate');
 
-router.get('/', reviewsController.getAllReviews);
+router.get('/', isAuthenticated, reviewsController.getAllReviews);
 router.get('/:id', isAuthenticated, reviewsController.getSingleReview);
 router.post('/', isAuthenticated, validateReview, reviewsController.createReview);
 router.put('/:id', isAuthenticated, validateReview, reviewsController.updateReview);
