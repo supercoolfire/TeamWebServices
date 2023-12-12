@@ -4,7 +4,7 @@ const swaggerAutogen = require('swagger-autogen');
 
 // const host = 'localhost:3000';
 // const host = 'localhost:3001';
-const host = 'https://project2-cqkb.onrender.com';
+const host = 'musicdatabase-64n3.onrender.com';
 
 const doc = {
     info: {
