@@ -1,0 +1,42 @@
+[{
+  "_id": {
+    "$oid": "657049664a93604152311bc9"
+  },
+  "login": "extranotadmin",
+  "role": "moderator"
+},
+{
+  "_id": {
+    "$oid": "657049664a93604152311bc6"
+  },
+  "login": "supercoolfire",
+  "role": "admin"
+},
+{
+  "_id": {
+    "$oid": "657049664a93604152311bc8"
+  },
+  "login": "erodgeStudent",
+  "role": "admin"
+},
+{
+  "_id": {
+    "$oid": "657049664a93604152311bc7"
+  },
+  "login": "LourencoLegend",
+  "role": "admin"
+},
+{
+  "_id": {
+    "$oid": "657539194d9515b743722c04"
+  },
+  "login": "Thor",
+  "role": "god"
+},
+{
+  "_id": {
+    "$oid": "6575e37f4d9515b743722c06"
+  },
+  "login": "Alien-life-form",
+  "role": "guest"
+}]

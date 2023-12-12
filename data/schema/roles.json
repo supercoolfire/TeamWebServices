@@ -1,0 +1,98 @@
+{
+    "count": 6,
+    "fields": [
+      {
+        "name": "_id",
+        "path": [
+          "_id"
+        ],
+        "count": 6,
+        "type": "ObjectId",
+        "probability": 1,
+        "hasDuplicates": false,
+        "types": [
+          {
+            "name": "ObjectId",
+            "path": [
+              "_id"
+            ],
+            "count": 6,
+            "probability": 1,
+            "unique": 6,
+            "hasDuplicates": false,
+            "values": [
+              "657049664a93604152311bc7",
+              "657049664a93604152311bc9",
+              "6575e37f4d9515b743722c06",
+              "657049664a93604152311bc8",
+              "657539194d9515b743722c04",
+              "657049664a93604152311bc6"
+            ],
+            "bsonType": "ObjectId"
+          }
+        ]
+      },
+      {
+        "name": "login",
+        "path": [
+          "login"
+        ],
+        "count": 6,
+        "type": "String",
+        "probability": 1,
+        "hasDuplicates": false,
+        "types": [
+          {
+            "name": "String",
+            "path": [
+              "login"
+            ],
+            "count": 6,
+            "probability": 1,
+            "unique": 6,
+            "hasDuplicates": false,
+            "values": [
+              "LourencoLegend",
+              "extranotadmin",
+              "Alien-life-form",
+              "erodgeStudent",
+              "Thor",
+              "supercoolfire"
+            ],
+            "bsonType": "String"
+          }
+        ]
+      },
+      {
+        "name": "role",
+        "path": [
+          "role"
+        ],
+        "count": 6,
+        "type": "String",
+        "probability": 1,
+        "hasDuplicates": true,
+        "types": [
+          {
+            "name": "String",
+            "path": [
+              "role"
+            ],
+            "count": 6,
+            "probability": 1,
+            "unique": 4,
+            "hasDuplicates": true,
+            "values": [
+              "admin",
+              "moderator",
+              "guest",
+              "admin",
+              "god",
+              "admin"
+            ],
+            "bsonType": "String"
+          }
+        ]
+      }
+    ]
+  }

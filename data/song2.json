@@ -1,0 +1,145 @@
+[
+  {
+    "_id": "655a95fb4fda09202c01edf7",
+    "title": "Imagine",
+    "artist": "John Legend",
+    "album": "Imagine",
+    "genre": "Pop",
+    "year": "1971",
+    "duration": "308",
+    "bpm": "100",
+    "key": "C"
+  },
+  {
+    "_id": "655a9ec66234dccbcf4e9794",
+    "title": "ABCs",
+    "artist": "Sesame Street",
+    "album": "Sesame Street Live",
+    "genre": "Melody",
+    "year": "1900",
+    "duration": "26s",
+    "bpm": "idk",
+    "key": "F"
+  },
+  {
+    "_id": "65743f88cb38303c4d5162d9",
+    "title": "alphabet",
+    "artist": "Sesame Streety",
+    "album": "Sesame Street Live",
+    "genre": "Melody",
+    "year": "1900",
+    "duration": "26s",
+    "bpm": "idk",
+    "key": "F"
+  },
+  {
+    "_id": "65744021cb38303c4d5162da",
+    "title": "Bohemian Rhapsody",
+    "artist": "Queen",
+    "album": "A Night at the Opera",
+    "genre": "Rock",
+    "year": 1975,
+    "duration": 539,
+    "bpm": 140,
+    "key": "Eb"
+  },
+  {
+    "_id": "657440dd8b7d24ff43491e5f",
+    "title": "Bohemian Rhapsody",
+    "artist": "Queen",
+    "album": "A Night at the Opera",
+    "genre": "Rock",
+    "year": "nineteen seventy five",
+    "duration": 539,
+    "bpm": 140,
+    "key": "Eb"
+  },
+  {
+    "_id": "657440dd8b7d24ff43491e60",
+    "title": "Imagine",
+    "artist": "John Lennon",
+    "album": "Imagine",
+    "genre": "Pop",
+    "year": 1971,
+    "duration": 308,
+    "bpm": 100,
+    "key": "C"
+  },
+  {
+    "_id": "657440dd8b7d24ff43491e61",
+    "title": "Hallelujah",
+    "artist": "Leonard Cohen",
+    "album": "Songs of Love and Hate",
+    "genre": "Folk",
+    "year": 1984,
+    "duration": 491,
+    "bpm": 76,
+    "key": "G"
+  },
+  {
+    "_id": "657440dd8b7d24ff43491e62",
+    "title": "Hey Jude",
+    "artist": "The Beatles",
+    "album": "Hey Jude",
+    "genre": "Pop",
+    "year": 1968,
+    "duration": 708,
+    "bpm": 105,
+    "key": "C"
+  },
+  {
+    "_id": "657440dd8b7d24ff43491e64",
+    "title": "Yesterday",
+    "artist": "The Beatles",
+    "album": "Help!",
+    "genre": "Pop",
+    "year": 1965,
+    "duration": 203,
+    "bpm": 96,
+    "key": "F"
+  },
+  {
+    "_id": "657440dd8b7d24ff43491e65",
+    "title": "Tears in Heaven",
+    "artist": "Eric Clapton",
+    "album": "Tears in Heaven",
+    "genre": "Pop",
+    "year": 1991,
+    "duration": 461,
+    "bpm": 88,
+    "key": "Eb"
+  },
+  {
+    "_id": "657440dd8b7d24ff43491e66",
+    "title": "Hotel California",
+    "artist": "Eagles",
+    "album": "Hotel California",
+    "genre": "Rock",
+    "year": 1977,
+    "duration": 607,
+    "bpm": 140,
+    "key": "Am"
+  },
+  {
+    "_id": "657440dd8b7d24ff43491e67",
+    "title": "Billie Jean",
+    "artist": "Michael Jackson",
+    "album": "Thriller",
+    "genre": "Pop",
+    "year": 1983,
+    "duration": 453,
+    "bpm": 120,
+    "key": "F#"
+  },
+  {
+    "_id": "657440dd8b7d24ff43491e68",
+    "title": "Like a Rolling Stone",
+    "artist": "Bob Dylan",
+    "album": "The Times They Are a-Changin'",
+    "genre": "Folk Rock",
+    "year": 1965,
+    "duration": 607,
+    "bpm": 120,
+    "key": "D"
+  }
+]
