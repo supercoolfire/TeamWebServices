@@ -17,15 +17,12 @@ router.use((req, res, next) => {
       res.locals.message = `Logged in as ${req.session.user.username}`;
     }
   } else {
-    if (res.session !== undefined) {
-      console.log(`1 res.session.goodbye: ${res.session.goodbye}`);
-    }
     if (req.session.goodbye == true) {
       res.locals.message = 'Thank you for visiting. You are successfully logged out!';
-      console.log(`1 res.locals.message: ${res.locals.message}`);
+      // console.log(`1 res.locals.message: ${res.locals.message}`);
       req.session.goodbye = false;
     } else {
-      console.log(`0 res.locals.message: ${res.locals.message}`);
+      // console.log(`0 res.locals.message: ${res.locals.message}`);
       res.locals.message = "Register now, it's FREE!";
     }
   }
@@ -65,7 +62,8 @@ router.get("/github-auth", (req, res, next) => {
   if (req.session.user) {
     // console.log('github-auth if:')
     // console.log(req.session.user)
-    profilePic = req.session.user.photos[0].value;
+    // blank if undefined
+    profilePic = req.session.user.photos[0].value || '';
     isAuthorized = true;
     if (req.session.user.displayName == null) {
       res.locals.message = `Logged in as ${req.session.user.username}`;
