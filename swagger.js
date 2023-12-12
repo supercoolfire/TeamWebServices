@@ -6,7 +6,7 @@ const doc = {
     },
     // host: 'localhost:3000',
     // schemes: ['http', 'https']
-    host: 'project2-cqkb.onrender.com/',
+    host: 'project2-cqkb.onrender.com',
     schemes: ['https', 'http']
 };
 

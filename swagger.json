@@ -5,7 +5,7 @@
     "version": "1.0.0",
     "description": ""
   },
-  "host": "project2-cqkb.onrender.com/",
+  "host": "project2-cqkb.onrender.com",
   "basePath": "/",
   "schemes": [
     "https",
