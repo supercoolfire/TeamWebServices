@@ -4,7 +4,7 @@ GET http://localhost:3000/user
 
 ###
 #get single-- need to add id
-GET http://localhost:3000/user/655aa391b31bc11814fa684b
+GET http://localhost:3000/user/655a75d75783fd0408959723
 
 ###
 #create
@@ -12,10 +12,10 @@ POST http://localhost:3000/user HTTP/1.1
 Content-Type: application/json
 
 {   
-    "username": "Mum",
-    "fullname": "E Rodziewicz",
-    "email": "testing1-2@rodzi.net",
-    "password": "password1"
+    "username": "Daniel",
+    "fullname": "Daniel Simons",
+    "email": "tester1@gmail.com",
+    "password": "passworD1$"
 }
 
 ###

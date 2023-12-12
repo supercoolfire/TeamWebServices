@@ -1,13 +1,22 @@
 {
   "dependencies": {
+    "@shelf/jest-mongodb": "^4.2.0",
+    "axios": "^1.6.2",
     "body-parser": "^1.20.2",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "mongodb": "^6.3.0",
-    "passport": "^0.6.0"
+    "passport": "^0.6.0",
+    "swagger": "^0.0.1",
+    "swagger-autogen": "^2.23.7",
+    "swagger-ui-express": "^5.0.0",
+    "validatorjs": "^3.22.1"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "swagger": "node ./swagger.js",
+    "test": "jest"
   },
   "name": "teamwebservices",
   "version": "1.0.0",
@@ -22,5 +31,14 @@
   "bugs": {
     "url": "https://github.com/erodgeStudent/TeamWebServices/issues"
   },
-  "homepage": "https://github.com/erodgeStudent/TeamWebServices#readme"
+  "homepage": "https://github.com/erodgeStudent/TeamWebServices#readme",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.1"
+  },
+  "keywords": [],
+  "engines": {
+    "node": "v20.9.0",
+    "npm": ">=10.2.4"
+  }
 }
