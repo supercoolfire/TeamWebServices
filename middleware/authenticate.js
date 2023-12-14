@@ -27,7 +27,7 @@ function filterAPI(req, res, status, message) {
     message: message,
     req: req,
   };
-  res.status(status).render('index', data);
+  res.status(status).render('frontend/index', data);
 }
 
 async function getUserRole(username) {
