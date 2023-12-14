@@ -14,10 +14,20 @@
  * with 
  mongodb.getDatabase().db().findOne({ userName: username });
  *
+ * 
  * Sample usage:
 const { isAuthenticated, isGod, isAdmin, isModerator } = require('../middleware/authenticate');
 
 router.get('/', isAuthenticated, usersController.getAllUsers);
+ * 
+ *
+ * If you are not using app.set('view engine', 'ejs');
+ * replace
+ res.status(status).render('frontend/index', data);
+ * with
+ res.redirect("/");
+ * 
+ * frontend/index is in the folder where app.use(express.static('static')); declared
  * 
  */
 const mongodb = require('../data/database'); // Update the path as needed
